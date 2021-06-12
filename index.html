@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конвертер валют</title>
+  <link rel="icon" href="icon/expense.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+</head>
+<body class="body">
+  <div class="container">
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--EN-LSGr-/"><button class="button">EN</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--RU-LSGr-/"><button class="button">RU</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--DE-LSGr-/"><button class="button">DE</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--ES-LSGr-/"><button class="button">ES</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--PL-LSGr-/"><button class="button">PL</button></a>
+    <a class="button--link" href="https://mr-front-end-dev.github.io/Currency-Converter--UA-LSG-/"><button class="button button--lightslategrey">🌗</button></a>
+    <form class="form js-form">
+      <h1 class="form__header">Конвертер валют</h1>
+      <p>
+        <p class="form__paragraphWarning">Конвертація з PLN (PL) <span class="form__span--asterisk">*</span></p>
+        <label>
+          <span class="form__labelText form__labelText--lightslategrey">Сума в <span
+            class="form__span--asterisk">*</span> :</span>
+          <input type="number" placeholder="Enter the amonumt in PLN" class="form__field js-amount" min="0" max="100000"
+            step="0.01" required>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span class="form__labelText">Валюта:</span>
+          <select class="form__field js-currency">
+            <option value="THB">1 Таїландський бат (THB)</option>
+            <option value="USD">1 Американський долар (USD)</option>
+            <option value="AUD">1 Австралійський долар (AUD)</option>
+            <option value="HKD">1 Гонконгський долар (HKD)</option>
+            <option value="CAD">1 Канадський долар (CAD)</option>
+            <option value="NZD">1 Новозеландський долар (NZD)</option>
+            <option value="SGD">1 Сінгапурський долар (SGD)</option>
+            <option value="EUR">1 Європейський євро (EUR)</option>
+            <option value="(* 100) HUF">100 Угорський форинт (HUF)</option>
+            <option value="CHF">1 Швейцарський франк (CHF)</option>
+            <option value="GBP">1 Британський фунт (GBP)</option>
+            <option value="UAH">1 Українська гривня (UAH)</option>
+            <option value="(* 100) JPY">100 Японська єна (JPY)</option>
+            <option value="CZK">1 Чеська крона (CZK)</option>
+            <option value="DKK">1 Датська крона (DKK)</option>
+            <option value="(* 100) ISK">100 Ісландська крона (ISK)</option>
+            <option value="NOK">1 Норвезька крона (NOK)</option>
+            <option value="SEK">1 Шведська крона (SEK)</option>
+            <option value="HRK">1 Хорватська куна (HRK)</option>
+            <option value="RON">1 Румунський лей (RON)</option>
+            <option value="BGN">1 Болгарський лев (BGN)</option>
+            <option value="TRY">1 Турецька ліра (TRY)</option>
+            <option value="ILS">1 Новий Ізраїль Шекель (ILS)</option>
+            <option value="(* 100) CLP">100 Чилійський песо (CLP)</option>
+            <option value="PHP">1 Філіппінське песо (PHP)</option>
+            <option value="MXN">1 Мексиканське песо (MXN)</option>
+            <option value="ZAR">1 Південноафриканський ранд (ZAR)</option>
+            <option value="BRL">1 Бразильський Реал (BRL)</option>
+            <option value="MYR">1 Малайзійський ринггіт (MYR)</option>
+            <option value="RUB">1 Російський рубль (RUB)</option>
+            <option value="(* 10000) IDR">10000 Індонезійська рупія (IDR)</option>
+            <option value="(* 100) INR">100 Індійська рупія (INR)</option>
+            <option value="(* 100) KRW">100 Південнокорейська вона (KRW)</option>
+            <option value="CNY">1 Китайський юань (CNY)</option>
+            <option value="XDR">1 SDR (MFW)</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <button class="form__buttonText">Конвертувати!</button>
+      </p>
+      <p class="form__info">Ставки взяті з таблиці № 002/A/NBP/2021 від 2020-01-05</p>
+      <!-- UPDATE with time -->
+      <p class="form__result js-result"></p>
+      <div class="underline--seagreen"></div>
+    </form>
+  </div>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>

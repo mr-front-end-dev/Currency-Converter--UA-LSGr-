@@ -1,0 +1,97 @@
+.form {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.form__header {
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(177, 70%, 41%);
+}
+
+.form__paragraphWarning {
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 15px;
+  color: hsl(0,0%, 100%);
+  background-color: hsl(177, 70%, 41%);
+}
+
+.form__span--asterisk {
+  color: hsl(340, 57%, 64%);
+  font-weight: bold;
+}
+
+.form__labelText {
+  display: inline-block; 
+  padding: 15px;
+  max-width: 210px; 
+  width: 100%;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(177, 70%, 41%);
+}
+
+@media (max-width: 414px) {
+  .form__labelText {
+    max-width: 245px;
+  }
+}
+
+.form__labelText--lightseagreen {
+  background-color: hsl(177, 70%, 41%);
+}
+
+.form__field {
+  width: 100%;
+  max-width: 475px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid hsl(0, 0%, 83%);
+}
+
+@media (max-width: 414px) {
+  .form__field {
+    max-width: 245px;
+  }
+}
+
+.form__buttonText {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px; 
+  width: 100%;
+  padding: 15px;
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(177, 70%, 41%);
+}
+
+.form__buttonText:hover {
+  background-color: hsl(177, 70%, 46%);
+}
+
+.form__buttonText:active {
+  background-color: hsl(177, 70%, 51%);
+}
+
+.form__info {
+  color: hsl(203, 92%, 50%);
+  font-size: 18px;
+  text-align: center;
+}
+
+.form__result {
+  font-size: 22px;
+  text-align: center;
+  color: hsl(177, 70%, 36%);
+}
+
+.underline--seagreen {
+  padding: 20px;
+  width: 100%;
+  background-color: hsl(177, 70%, 41%); 
+}

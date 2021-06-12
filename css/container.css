@@ -1,0 +1,12 @@
+.container {
+  flex-basis: 900px;
+  margin: 20px;
+  box-shadow: 0 0 15px hsl(177, 70%, 41%);
+  background-color: rgba(32, 178, 170, 0.3);
+} 
+
+@media (max-width: 414px) {
+  .container {
+    flex-basis: 600px;
+  }
+}

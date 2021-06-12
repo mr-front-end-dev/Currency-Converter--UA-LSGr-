@@ -1,0 +1,38 @@
+.button {
+  background-color: hsl(0, 0%, 100%);
+  border-style: none;
+  font-size: 16px;
+  padding: 8px;
+  margin: 5px;
+  transition: 0.1s;
+  cursor: context-menu;
+}
+
+.button:hover {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.button--lightslategrey.button--lightslategrey {
+  background-color: hsl(210, 14%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.button--lightslategrey.button--lightslategrey:hover {
+  background-color: hsl(210, 14%, 58%);
+}
+
+.button--lightslategrey {
+  background-color: hsl(210, 14%, 53%);
+  color:hsl(0, 0%, 100%);
+  left: 5px;
+}
+
+.button--lightslategrey.button--lightslategrey:hover {
+  background-color: hsl(210, 14%, 58%);
+}
+
+.button--link {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  cursor: context-menu;
+}
